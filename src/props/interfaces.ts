@@ -3,6 +3,6 @@ export interface Direccion {
   calle: string;
 }
 export interface Person {
-  nombre: string;
-  profecion: string;
+  nombre?: string;
+  profecion?: string;
 }

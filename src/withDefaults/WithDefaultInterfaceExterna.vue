@@ -4,17 +4,18 @@ Nota: en la documentacion tiene esta estructura
 const props = defineProps<Props>()
 pero esta no es valida da Error
 */
-import { Person } from '/interfaces.ts';
-const { nombre, profecion } = withDefaults(defineProps<{ persona: Person }>(), {
+
+import { Person } from "../props/interfaces";
+const { persona } = withDefaults(defineProps<{ persona: Person }>(), {
   persona: {
-    nombre: 'sin nombre',
-    profecion: 'anonimo',
+    nombre: "sin nombre",
+    profecion: "anonimo",
   },
 });
 </script>
 
 <template>
-  <h4>Props interfaces externa</h4>
+  <h4>Props default interfaces externa</h4>
   {{ persona.nombre }}
   {{ persona.profecion }}
   <hr />

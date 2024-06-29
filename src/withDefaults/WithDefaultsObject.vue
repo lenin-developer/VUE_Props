@@ -1,19 +1,21 @@
 <script setup lang="ts">
-export interface CardProps {
+type CardPropsType = {
   marca: string;
   modelo: string;
-}
+};
 
-const props = withDefaults(defineProps<{ card: CardProps }>(), {
+const { card } = withDefaults(defineProps<{ card: CardPropsType }>(), {
   card: {
-    marca: 'subaru',
-    modelo: 'crossket',
+    marca: "subaru",
+    modelo: "crossket",
   },
 });
+
+console.log("Prop por defecto de un objeto con interna inetrna", card);
 </script>
 
 <template>
-  <h4>Prop por defecto de un objeto con interfaz</h4>
+  <h4>Prop por defecto de un objeto con type interno</h4>
   {{ card.marca }} -
   {{ card.modelo }}
 </template>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ModelRef } from 'vue';
+import type { ModelRef } from "vue";
 
-const inputA: ModelRef<string> = defineModel('inputA');
-const inputB: ModelRef<string> = defineModel('inputB');
+const inputA: ModelRef<string | undefined, string> = defineModel("inputA");
+const inputB: ModelRef<string | undefined, string> = defineModel("inputB");
 </script>
 
 <template>

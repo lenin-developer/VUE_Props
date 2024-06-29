@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { ModelRef } from 'vue';
-const model: ModelRef<number> = defineModel();
+import type { ModelRef } from "vue";
+const model: ModelRef<number | undefined, number> = defineModel();
 
 const handleClick = () => {
-  model.value++;
+  if (typeof model.value === "number") model.value++;
 };
 </script>
 

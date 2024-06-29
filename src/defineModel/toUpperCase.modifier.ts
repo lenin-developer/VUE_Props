@@ -1,5 +1,5 @@
 export const toUpperCaseMod = (
-  modifiers: { toUpperCase: boolean },
+  modifiers: Record<string, true | undefined>,
   value: string
 ) => {
   let newValue = value;

@@ -3,16 +3,16 @@ debemos especificar en el hijo un defineModel para poder trabajar con esa
 referencia
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import type { Ref } from 'vue';
-import DefineModelBasic from './DefineModelBasic.vue';
-import DefineModelArg from './DefineModelArg.vue';
-import DefineModelModifeir from './DefineModelModifeir.vue';
+import { ref } from "vue";
+import type { Ref } from "vue";
+import DefineModelBasic from "./DefineModelBasic.vue";
+import DefineModelArg from "./DefineModelArg.vue";
+import DefineModelModifeir from "./DefineModelModifeir.vue";
 
 const cont: Ref<number> = ref(0);
-const inputA: Ref<string> = ref('');
-const inputB: Ref<string> = ref('');
-const myInputB: Ref<string> = ref('');
+const inputA: Ref<string> = ref("");
+const inputB: Ref<string> = ref("");
+const myInputB: Ref<string> = ref("");
 </script>
 
 <template>

@@ -4,7 +4,7 @@ https://vuejs.org/guide/typescript/composition-api.html#syntax-limitations
 https://www.typescriptlang.org/es/play#example/conditional-types
 
 <script setup lang="ts">
-import { Direccion } from '/interfaces.ts';
+import { Direccion } from "./interfaces.ts";
 
 const props = defineProps<{
   nombre: string;
